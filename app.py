@@ -32,8 +32,9 @@ def procesar_pdf():
             "telefono": telefono
         })
 
-        # Enviar a webhook de n8n (REEMPLAZAR URL)
-        requests.post("https://n8n-mi-flujo.com/webhook/confirmar", json=pacientes[-1])
+# Enviar a webhook de n8n (NGROK)
+requests.post("https://2a4f54982099.ngrok-free.app/webhook-test/recordatorio-citas", json=pacientes[-1])
+
 
     return jsonify({"estado": "ok", "pacientes": pacientes})
 
