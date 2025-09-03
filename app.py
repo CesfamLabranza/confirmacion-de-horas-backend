@@ -34,7 +34,7 @@ def procesar_pdf():
 
         # Enviar a webhook de n8n (ACTUALIZADO CON NGROK)
         requests.post(
-            "https://2a4f54982099.ngrok-free.app/webhook-test/recordatorio-citas",
+            " https://c8351fbed2df.ngrok-free.app/webhook-test/recordatorio-citas",
             json=pacientes[-1]
         )
 
